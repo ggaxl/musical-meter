@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Musical Meter</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c2c2c;
+      color: #fff;
+      text-align: center;
+      padding: 40px 0;
+      font-size: 3em;
+    }
+
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1em;
+      padding: 8px 12px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #666;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 60px 5%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #2c2c2c;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      width: 320px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .card-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #2c2c2c;
+    }
+
+    .card-date {
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    .card-text {
+      font-size: 1em;
+      color: #444;
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>MUSICAL METER</header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#premios">Premios</a>
+    <a href="#noticias">Noticias</a>
+    <a href="#musica-latina">Música Latina</a>
+  </nav>
+
+  <!-- INICIO -->
+  <section id="inicio">
+    <h2 class="section-title">Inicio</h2>
+    <div class="card-container">
+      <div class="card">
+        <a href="#noticias"><img src="file-3LFDDwNzn1FMamUwivtAhZ" alt="Lisa, Raye y Doja Cat"></a>
+        <div class="card-content">
+          <div class="card-title">Lisa, Raye y Doja Cat</div>
+          <div class="card-date">Oscars 2025</div>
+          <div class="card-text">Encabezarán una presentación especial, destacando el poder femenino en la música global.</div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="#noticias"><img src="file-3LFDDwNzn1FMamUwivtAhZ" alt="Paquita la del Barrio"></a>
+        <div class="card-content">
+          <div class="card-title">Paquita la del Barrio</div>
+          <div class="card-date">17 Febrero 2025</div>
+          <div class="card-text">Falleció a los 77 años. Ícono feminista de la música mexicana con un legado inmortal.</div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="#musica-latina"><img src="file-3LFDDwNzn1FMamUwivtAhZ" alt="Chapell Roan"></a>
+        <div class="card-content">
+          <div class="card-title">Chapell Roan</div>
+          <div class="card-date">Nuevo sencillo</div>
+          <div class="card-text">Lanzó “The Giver”, con sonido nostálgico y estética teatral única.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREMIOS -->
+  <section id="premios">
+    <h2 class="section-title">Premios Grammy 2025</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="file-XhYU1sBnWV8JZzpZAtXkcz" alt="Beyoncé Grammy 2025">
+        <div class="card-content">
+          <div class="card-title">Beyoncé</div>
+          <div class="card-date">Álbum del Año</div>
+          <div class="card-text">Con “Cowboy Carter”, hace historia como la artista más premiada de los Grammy.</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="file-XhYU1sBnWV8JZzpZAtXkcz" alt="Kendrick Lamar Grammy">
+        <div class="card-content">
+          <div class="card-title">Kendrick Lamar</div>
+          <div class="card-date">Canción del Año</div>
+          <div class="card-text">Ganó con “Not Like Us”, una poderosa crítica social con fuerza lírica.</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="file-XhYU1sBnWV8JZzpZAtXkcz" alt="Chappell y Sabrina">
+        <div class="card-content">
+          <div class="card-title">Chappell Roan & Sabrina Carpenter</div>
+          <div class="card-date">Estrellas emergentes</div>
+          <div class="card-text">Chappell fue Mejor Artista Nuevo, mientras Sabrina triunfó en Álbum Pop.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTICIAS -->
+  <section id="noticias">
+    <h2 class="section-title">Noticias Musicales</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="file-PvuWqqv6T5NNvTM9VqYzYx" alt="Homenajes musicales">
+        <div class="card-content">
+          <div class="card-title">Homenajes 2025</div>
+          <div class="card-date">Eventos especiales</div>
+          <div class="card-text">Se preparan tributos a figuras como Irv Gotti y Gene “Groove” Allen.</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="file-PvuWqqv6T5NNvTM9VqYzYx" alt="Adiós a Paquita">
+        <div class="card-content">
+          <div class="card-title">Despedida a Paquita</div>
+          <div class="card-date">Emotivos homenajes</div>
+          <div class="card-text">Artistas mexicanos e internacionales dedican palabras a su legado musical.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÚSICA LATINA -->
+  <section id="musica-latina">
+    <h2 class="section-title">Música Latina</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="file-TzqDztXwV4HSVcwZFN2Eau" alt="Shakira en vivo">
+        <div class="card-content">
+          <div class="card-title">Shakira</div>
+          <div class="card-date">Gira benéfica</div>
+          <div class="card-text">Triunfa en Colombia con canciones nuevas y apoyo a comunidades.</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="file-TzqDztXwV4HSVcwZFN2Eau" alt="Karol G mundial">
+        <div class="card-content">
+          <div class="card-title">Karol G</div>
+          <div class="card-date">Éxito global</div>
+          <div class="card-text">Su álbum “Mañana Será Bonito” lidera listas internacionales.</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="file-TzqDztXwV4HSVcwZFN2Eau" alt="Anitta y Umbanda">
+        <div class="card-content">
+          <div class="card-title">Anitta</div>
+          <div class="card-date">Declaración cultural</div>
+          <div class="card-text">Habla sobre su fe en Umbanda, fusionando música y espiritualidad.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
